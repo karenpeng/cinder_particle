@@ -21,7 +21,7 @@ class Attractor {
   float ySinWeight, zSinWeight;
 
   Attractor(float _xSpeed, float _ySpeed, float _zSpeed, float _ySinWeight, float _zSinWeight) {
-    location = new PVector(width/2, -60, 0);
+    location = new PVector(random(0,width/2), -60, 0);
     mass = 20;
     g = 0.4;
     for (int i = 0; i < movers.length; i++) {
@@ -85,7 +85,7 @@ class Attractor {
     }
 
     for (int i=0;i<movers.length;i++) {
-      movers[i].display(color(hue(c),255,200));
+      //movers[i].display(color(hue(c),255,200));
     }
   }
 }
