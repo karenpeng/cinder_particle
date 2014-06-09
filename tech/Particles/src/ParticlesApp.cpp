@@ -17,7 +17,7 @@ class ParticlesApp : public AppNative {
 public:
   void prepareSettings(Settings *settings);
   void setup();
-  void mouseMove(MouseEvent event);
+  void mouseMove( MouseEvent event);
   void mouseDrag(MouseEvent event);
   void mouseUp(MouseEvent event);
   void mouseDown(MouseEvent event);
@@ -37,7 +37,7 @@ private:
 
 void ParticlesApp::prepareSettings(Settings *settings) {
 	settings->setWindowSize(1920	, 1080);
-  settings->setFrameRate(60.0f);
+  settings->setFrameRate(30.0f);
 }
 
 void ParticlesApp::setup() {
@@ -84,13 +84,13 @@ void ParticlesApp::update() {
 void ParticlesApp::draw() {
   // make sure we can draw to background by setting the right flags
   // see https://forum.libcinder.org/topic/draw-image-overtop-of-image
-	gl::clear(Color::black(), true);
+	gl::clear(Color::white(), true);
   gl::disableDepthRead();
   gl::disableDepthWrite();
   gl::enableAlphaBlending();
   gl::color(Color::white());
   
-  gl::draw(mBackgroundImage, getWindowBounds());
+  //gl::draw(mBackgroundImage, getWindowBounds());
   
   gl::pushMatrices();
   this->controller->draw();

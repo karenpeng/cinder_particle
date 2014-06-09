@@ -120,7 +120,6 @@ void Particle::draw() {
   
   // rotate according to direction
   const float directionImpact = 0.5f;
-  
   const float directionTheta = atan2(mVelocity.y, mVelocity.x) + M_PI_2;
   const float directionThetaDeg = 180.0f * directionTheta / M_PI;
   gl::rotate(directionImpact * Vec3f(0.0f, 0.0f, directionThetaDeg));

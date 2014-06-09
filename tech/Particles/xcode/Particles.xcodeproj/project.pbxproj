@@ -76,9 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				21FA02561937E90F00327ECD /* Particle.cpp */,
-				21FA02571937E90F00327ECD /* Particle.h */,
 				215283E01937F2A5007F4248 /* ParticleController.cpp */,
-				215283E11937F2A5007F4248 /* ParticleController.h */,
 				96CC1ECD4AC348C18D8BB147 /* ParticlesApp.cpp */,
 			);
 			name = Source;
@@ -133,6 +131,8 @@
 		29B97315FDCFA39411CA2CEA /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				215283E11937F2A5007F4248 /* ParticleController.h */,
+				21FA02571937E90F00327ECD /* Particle.h */,
 				512D1CB3C3C04C10A6E073E1 /* Resources.h */,
 				60A4CC38E4CA430A91BC6A85 /* Particles_Prefix.pch */,
 			);
